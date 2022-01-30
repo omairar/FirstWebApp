@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Response Object</title>
+    <title>Shared Views</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/Site.css" rel="stylesheet">
 
@@ -17,26 +17,30 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="/">Home</a>
+                       
+                        <a class="nav-link @(ViewBag.Title == "Home" ? "active" : "" )" aria-current="page" href="/">Home</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="/Actionss/Index">Action</a>
+                        <a class="nav-link" href="/Actionss/Index">Action</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/RazorExpressions/Index">Razor Expressions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/HttpObjects/Index">HTTP Objects</a>
+                        <a class="nav-link " href="/HttpObjects/Index">HTTP Objects</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link " href="/SaredViews/Index">Shared Views</a>
+                        
+                        <a class="nav-link @(ViewBag.Title == "Shared" ? "active" : "" )" href="/SaredViews/Index">Shared Views</a>
                     </li>
 
                 </ul>
@@ -45,12 +49,21 @@
         </div>
     </nav>
     <div class="container pt-5 ">
-        <h1> Response Objects</h1><br />
-        <p>Check in Networking & Console</p>
 
+
+        <div class="d-flex" style="align-items:center; justify-content:center; flex-direction: column">
+            <h1> Comming from <span class="text-primary">@ViewBag.Title Controller !!!!!!</span> </h1>
+            <span class="spiral-mokey">
+                🐵
+            </span>
+        </div>
+        
+
+        
 
     </div>
 
     <script src="~/Content/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+    

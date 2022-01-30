@@ -103,6 +103,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HttpObjectsController.cs" />
     <Compile Include="Controllers\RazorExpressionsController.cs" />
+    <Compile Include="Controllers\SaredViewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -120,6 +121,8 @@
     <Content Include="Views\HttpObjects\Index.cshtml" />
     <Content Include="Views\HttpObjects\getRequestObjects.cshtml" />
     <Content Include="Views\HttpObjects\setResponseObjects.cshtml" />
+    <Content Include="Views\SaredViews\Index.cshtml" />
+    <Content Include="Views\Shared\spiralMonkey.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -6,28 +6,17 @@ using System.Web.Mvc;
 
 namespace FirstWebApp.Controllers
 {
-    public class HomeController : Controller
+    public class SaredViewsController : Controller
     {
-        // GET: Home
+        // GET: SaredViews
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Products()
-        {
-            return View("OurCompanyName") ;
-        }
-
-        public ActionResult Contacts()
-        {
-            return View();
-        }
-
-
         public ActionResult spiralMonkey()
         {
-            @ViewBag.Title = "Home";
+            @ViewBag.Title = "Shared";
             return View();
         }
     }

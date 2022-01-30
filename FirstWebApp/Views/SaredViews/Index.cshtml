@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Response Object</title>
+    <title>Shared Views</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/Site.css" rel="stylesheet">
 
@@ -17,7 +17,6 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,16 +26,17 @@
                         <a class="nav-link " aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="/Actionss/Index">Action</a>
+                        <a class="nav-link" href="/Actionss/Index">Action</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/RazorExpressions/Index">Razor Expressions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/HttpObjects/Index">HTTP Objects</a>
+                        <a class="nav-link " href="/HttpObjects/Index">HTTP Objects</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link " href="/SaredViews/Index">Shared Views</a>
+                        <a class="nav-link active" href="/SaredViews/Index">Shared Views</a>
                     </li>
 
                 </ul>
@@ -44,10 +44,17 @@
             </div>
         </div>
     </nav>
-    <div class="container pt-5 ">
-        <h1> Response Objects</h1><br />
-        <p>Check in Networking & Console</p>
+    <div class="container pt-5 d-flex">
 
+
+
+        <a class="btn btn-outline-primary me-5" href="/SaredViews/spiralMonkey">
+            🐵 GOTO Home/spiralMokey
+        </a>
+
+        <a class="btn btn-outline-danger" href="/Home/spiralMonkey">
+            🐵 GOTO Shared/spiralMokey
+        </a>
 
     </div>
 
