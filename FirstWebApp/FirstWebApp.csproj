@@ -101,6 +101,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActionssController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HttpObjectsController.cs" />
     <Compile Include="Controllers\RazorExpressionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -116,6 +117,9 @@
     <Content Include="Views\Home\OurCompanyName.cshtml" />
     <Content Include="Views\Actionss\Index.cshtml" />
     <Content Include="Views\RazorExpressions\Index.cshtml" />
+    <Content Include="Views\HttpObjects\Index.cshtml" />
+    <Content Include="Views\HttpObjects\getRequestObjects.cshtml" />
+    <Content Include="Views\HttpObjects\setResponseObjects.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
