@@ -1,63 +1,14 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Shared Views";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Shared Views</title>
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
-    <link href="~/Content/Site.css" rel="stylesheet">
+<a class="btn btn-outline-primary me-5" href="/SaredViews/spiralMonkey">
+    🐵 GOTO Home/spiralMokey
+</a>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Actionss/Index">Action</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/RazorExpressions/Index">Razor Expressions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/HttpObjects/Index">HTTP Objects</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/SaredViews/Index">Shared Views</a>
-                    </li>
-
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-    <div class="container pt-5 d-flex">
-
-
-
-        <a class="btn btn-outline-primary me-5" href="/SaredViews/spiralMonkey">
-            🐵 GOTO Home/spiralMokey
-        </a>
-
-        <a class="btn btn-outline-danger" href="/Home/spiralMonkey">
-            🐵 GOTO Shared/spiralMokey
-        </a>
-
-    </div>
-
-    <script src="~/Content/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<a class="btn btn-outline-danger" href="/Home/spiralMonkey">
+    🐵 GOTO Shared/spiralMokey
+</a>
