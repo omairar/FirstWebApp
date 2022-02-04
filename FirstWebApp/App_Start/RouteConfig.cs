@@ -14,6 +14,14 @@ namespace FirstWebApp
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Products",
+                url: "{controller}/{action}/{emtName}",
+
+                defaults: new {},
+                constraints:new {emtName = @"^[A-Za-z]*$"}
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

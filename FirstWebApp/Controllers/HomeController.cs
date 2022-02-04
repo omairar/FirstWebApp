@@ -14,14 +14,59 @@ namespace FirstWebApp.Controllers
             return View();
         }
 
-        public ActionResult Products()
+
+        public ActionResult GetEmojiById(int? id)
         {
-            return View("OurCompanyName") ;
+            var emoji = new[] {
+                new {eid = 1, etxt= "🙈", ename = "sne" },
+                new {eid = 2, etxt= "🙊", ename = "tne"},
+                new {eid = 3, etxt= "🙉", ename = "hne"}
+            };
+
+            string emotName = "";
+
+            if (id == null)
+            {
+                return Content("enter someting");
+            }
+
+            foreach(var emot in emoji){
+                if(emot.eid == id)
+                {
+                    emotName = emot.etxt;
+                }
+                
+            }
+            return Content(emotName);
+
         }
 
-        public ActionResult Contacts()
+        public ActionResult GetEmojiByName(string emtName)
         {
-            return View();
+            var emoji = new[] {
+                new {eid = 1, etxt= "🙈", ename = "sne" },
+                new {eid = 2, etxt= "🙊", ename = "tne"},
+                new {eid = 3, etxt= "🙉", ename = "hne"}
+            };
+
+            string emotName = "";
+
+            if (emtName == null)
+            {
+                return Content("enter someting");
+            }
+
+            foreach (var emot in emoji)
+            {
+                if (emot.ename == emtName)
+                {
+                    emotName = emot.etxt;
+                }
+
+            }
+            return Content(emotName);
+
         }
+
     }
 }
