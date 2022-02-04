@@ -123,6 +123,7 @@
     <Content Include="Views\HttpObjects\setResponseObjects.cshtml" />
     <Content Include="Views\SaredViews\Index.cshtml" />
     <Content Include="Views\Shared\spiralMonkey.cshtml" />
+    <Content Include="Views\SaredViews\partialvieww.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

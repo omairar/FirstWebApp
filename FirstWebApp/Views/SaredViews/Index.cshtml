@@ -4,11 +4,26 @@
     ViewBag.Title = "Shared Views";
 }
 
+<div>
+    <div>
+        <a class="btn btn-outline-primary me-5" href="/Home/spiralMonkey">
+            🐵 GOTO Home/spiralMokey
+        </a>
 
-<a class="btn btn-outline-primary me-5" href="/SaredViews/spiralMonkey">
-    🐵 GOTO Home/spiralMokey
-</a>
+        <a class="btn btn-outline-danger" href="/SaredViews/spiralMonkey">
+            🐵 GOTO Shared/spiralMokey
+        </a>
+    </div>
+    
 
-<a class="btn btn-outline-danger" href="/Home/spiralMonkey">
-    🐵 GOTO Shared/spiralMokey
-</a>
+    <br />
+    <div class="mt-10" style="border: 2px solid blue">
+        
+        @{
+            ViewBag.pTitle = "Partial View 👇";
+            ViewBag.pText = "🕷";
+            Html.RenderPartial("partialvieww");
+        }
+    </div>
+</div>
+
