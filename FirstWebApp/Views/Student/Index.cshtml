@@ -1,0 +1,23 @@
+﻿
+<table class="table table-success table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in @ViewBag.studentsL)
+        {
+            <tr>
+                <th > @student.StudentId</th>
+                <td>@student.StudentName</td>
+                <td>@student.StudentMarks</td>
+            </tr>
+        }
+
+        
+    </tbody>
+
+</table>
