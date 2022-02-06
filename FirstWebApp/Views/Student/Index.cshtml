@@ -1,23 +1,24 @@
-﻿
-<table class="table table-success table-striped">
+﻿@model List<FirstWebApp.Models.Student>
+
+<table class="table table-warning table-striped">
     <thead>
         <tr>
             <th scope="col">#</th>
             <th scope="col">First</th>
             <th scope="col">Last</th>
+            <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var student in @ViewBag.studentsL)
+        @foreach (var student in Model)
         {
             <tr>
                 <th > @student.StudentId</th>
                 <td>@student.StudentName</td>
                 <td>@student.StudentMarks</td>
+                <td><a href="/student/getdetails/@student.StudentId" class="btn btn-danger">View Details</a></td>
             </tr>
-        }
-
-        
+        }  
     </tbody>
 
 </table>
